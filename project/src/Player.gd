@@ -30,7 +30,6 @@ func _physics_process(delta):
 			linear_velocity.x = lerp(linear_velocity.x, 0, friction)
 			
 		if Input.is_action_just_pressed("jump"):
-			$AudioStreamPlayer2D.play()
 			linear_velocity.y = -jump 
 	else:
 		animated_sprite.play("jump")
