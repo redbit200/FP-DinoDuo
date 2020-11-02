@@ -1,5 +1,5 @@
 # FP-DinoDuo
-
+https://bsu-cs315.github.io/FP-DinoDuo/
 ## Checklist
 - [x] D-1: The pitch or plan final submission are made after the deadline, and both are approved.
 - [x] D-2: You have registered with a team on Canvas, even if it is a team of one member.
