@@ -19,6 +19,11 @@ config/name="DinoDuo"
 run/main_scene="res://src/Level.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1088
+window/size/height=640
+
 [input]
 
 move_right={
