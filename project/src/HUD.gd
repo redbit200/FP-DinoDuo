@@ -13,3 +13,7 @@ func _process(delta):
 func _on_ContinueButton_pressed():
 	$PausePopup.hide()
 	get_tree().paused = false
+
+
+func _on_BackToTitleButton_pressed():
+	get_tree().reload_current_scene()
