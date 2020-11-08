@@ -10,9 +10,9 @@ onready var animated_sprite := $AnimatedSprite
 
 func get_input():
 	velocity.x = 0
-	var right = Input.is_action_pressed('ui_right')
-	var left = Input.is_action_pressed('ui_left')
-	var jump = Input.is_action_just_pressed('ui_select')
+	var right = Input.is_action_pressed("move_right")
+	var left = Input.is_action_pressed("move_left")
+	var jump = Input.is_action_just_pressed("jump")
 
 	if jump and is_on_floor():
 		if !right and !left:
