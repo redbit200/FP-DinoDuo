@@ -19,7 +19,7 @@ You are controlling both characters at the same time, be creative to figure out 
 ## Reflection
 For our group iteration 1 went well. We had no trouble following the plan for this iteration. At first, we had a basic character and a simple level for them to move around in. We then focused on adding to the game with a title screen and a HUD, which were easy to implement. We then went back and refined the players controls and the level design. As a team we had no problems both team members showed up and contributed at the times we specified. The work was split up evenly, with us both taking the lead at times.
 
-## Checklist
+## Evaluation
 - [X] D-1: The repository link is submitted to Canvas before the project deadline.
 - [X] D-2: The repository contains a <code>README.md</code> file in its top-level directory.
 - [X] D-3: The project content is eligible for an <a href="https://www.esrb.org/ratings-guide/">ESRB Rating</a> of M or less.
