@@ -2,7 +2,7 @@
 Developed by Chase W. and Collin S.
 
 ## How to Play
-Click the link below to play an HTML 5 version of DinoDuo
+Click the link below to play an HTML 5 version of DinoDuo  
 https://bsu-cs315.github.io/FP-DinoDuo/
 
 #### Controls:  
