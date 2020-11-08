@@ -19,7 +19,6 @@ func get_input():
 	var climb_up = Input.is_action_pressed("ui_up")
 	var climb_down = Input.is_action_pressed("ui_down")
 
-
 	if jump and is_on_floor():
 		if !right and !left:
 			jumping = true
@@ -46,9 +45,6 @@ func get_input():
 			velocity.y = 0
 	else:
 		gravity = 1200
-		
-			
-		
 
 func _physics_process(delta):
 	get_input()

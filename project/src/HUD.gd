@@ -16,7 +16,6 @@ func _on_BackToTitleButton_pressed():
 	ignored = get_tree().change_scene("res://src/Title.tscn")
 	get_tree().paused = false
 
-
 func _on_BackToTitleButton2_pressed():
 	get_tree().reload_current_scene()
 	get_tree().change_scene("res://src/Title.tscn")
