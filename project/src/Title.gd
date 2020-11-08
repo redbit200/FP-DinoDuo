@@ -1,4 +1,8 @@
 extends Node2D
 
-func _on_StartButton_pressed():
-	get_parent().start_game()
+func _process(_deta):
+	if Input.is_action_just_pressed("jump"):
+		get_tree().change_scene("res://src/Level.tscn")
+
+	
+

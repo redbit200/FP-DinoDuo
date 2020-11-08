@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/tilemap.png" type="Texture" id=1]
 [ext_resource path="res://src/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/HUD.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Pipe.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Level.gd" type="Script" id=5]
-[ext_resource path="res://src/Title.tscn" type="PackedScene" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -221,7 +220,5 @@ position = Vector2( 48, 176 )
 position = Vector2( 592, 176 )
 
 [node name="LevelTime" type="Timer" parent="."]
-wait_time = 180.0
+wait_time = 90.0
 one_shot = true
-
-[node name="Title" parent="." instance=ExtResource( 6 )]

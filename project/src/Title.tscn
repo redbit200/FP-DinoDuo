@@ -35,6 +35,7 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 60
+outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
@@ -72,14 +73,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="StartButton" type="Button" parent="."]
-margin_left = 435.584
-margin_top = 343.086
-margin_right = 629.584
-margin_bottom = 409.086
+[node name="HowToStart" type="Label" parent="."]
+margin_left = 336.399
+margin_top = 220.486
+margin_right = 738.399
+margin_bottom = 280.486
 custom_fonts/font = SubResource( 3 )
-text = "Start Game"
+text = "Press Space to Start"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
