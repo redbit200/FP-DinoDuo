@@ -66,10 +66,10 @@ Map Assets
 `Sci-fi Platformer Tiles (32x32)`  
 Author: [bart](https://opengameart.org/users/bart)  
 License: [Creative Commons 1.0 Universal - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)     
-Source: https://arks.itch.io/dino-characters  
+Source: https://opengameart.org/content/sci-fi-platformer-tiles-32x32  
 
 Font  
 `Dinocraft`  
 Author: [selawetype](https://www.dafont.com/sukro-typeface.d6998)  
 License: [Creative Commons v4.0 International](http://creativecommons.org/licenses/by/4.0/)     
-Source: https://arks.itch.io/dino-characters  
+Source: https://www.dafont.com/dinocraft.font
