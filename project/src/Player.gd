@@ -1,15 +1,19 @@
 extends KinematicBody2D
 
+
 const RUN_SPEED :int = 150
 const JUMP_SPEED : int = -550
 const CLIMB_SPEED : int = 90
+
 var gravity : int = 1200
 var velocity := Vector2()
 var jumping : bool = false
 var ladder_on : bool = false
 var at_goal : bool = false
 
+
 onready var animated_sprite := $AnimatedSprite
+
 
 func get_input():
 	velocity.x = 0
@@ -45,6 +49,7 @@ func get_input():
 			velocity.y = 0
 	else:
 		gravity = 1200
+
 
 func _physics_process(delta):
 	get_input()
