@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 
 const RUN_SPEED :int = 150
-const JUMP_SPEED : int = -550
+const JUMP_SPEED : int = -400
 const CLIMB_SPEED : int = 90
 
 var gravity : int = 1200
