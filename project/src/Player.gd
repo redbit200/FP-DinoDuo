@@ -7,6 +7,7 @@ var gravity : int = 1200
 var velocity := Vector2()
 var jumping : bool = false
 var ladder_on : bool = false
+var at_goal : bool = false
 
 onready var animated_sprite := $AnimatedSprite
 

@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/HUD.gd" type="Script" id=1]
+[ext_resource path="res://assets/dinocraft.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 light_mode = 1
@@ -10,6 +11,27 @@ light_mode = 1
 
 [sub_resource type="CanvasItemMaterial" id=3]
 light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=7]
+light_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=5]
+light_mode = 1
+
+[sub_resource type="DynamicFont" id=4]
+size = 100
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="CanvasItemMaterial" id=6]
+light_mode = 1
+
+[sub_resource type="DynamicFont" id=8]
+size = 30
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
 
 [node name="HUD" type="Node2D"]
 script = ExtResource( 1 )
@@ -63,6 +85,7 @@ __meta__ = {
 color = Color( 0.184314, 0.184314, 0.184314, 1 )
 
 [node name="LevelTimeLabel" type="Label" parent="."]
+material = SubResource( 7 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -75,5 +98,69 @@ text = "Time Left: 00:00"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="GameResult" type="Popup" parent="."]
+pause_mode = 2
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WinText" type="RichTextLabel" parent="GameResult"]
+visible = false
+material = SubResource( 5 )
+margin_left = 400.0
+margin_top = 160.0
+margin_right = 680.0
+margin_bottom = 463.0
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[center]Game Over!
+ [wave]You win![wave][center]"
+text = "Game Over!
+ You win!"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LoseText" type="RichTextLabel" parent="GameResult"]
+visible = false
+material = SubResource( 6 )
+margin_left = 400.0
+margin_top = 160.0
+margin_right = 680.0
+margin_bottom = 362.0
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "Game Over!
+ [wave]You lose![/wave]"
+text = "Game Over!
+ You lose!"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackToTitleButton2" type="Button" parent="GameResult"]
+margin_left = 472.0
+margin_top = 384.0
+margin_right = 610.0
+margin_bottom = 404.0
+text = "Back to Title Screen"
+
+[node name="HintLabel" type="Label" parent="."]
+visible = false
+margin_left = 8.0
+margin_top = 32.0
+margin_right = 693.0
+margin_bottom = 82.0
+custom_fonts/font = SubResource( 8 )
+text = "You need both dinosaurs to be in their goals to win!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="PausePopup/ContinueButton" to="." method="_on_ContinueButton_pressed"]
 [connection signal="pressed" from="PausePopup/BackToTitleButton" to="." method="_on_BackToTitleButton_pressed"]
+[connection signal="pressed" from="GameResult/BackToTitleButton2" to="." method="_on_BackToTitleButton2_pressed"]
