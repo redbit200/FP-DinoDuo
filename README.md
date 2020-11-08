@@ -51,3 +51,10 @@ You are controlling both characters at the same time, be creative to figure out 
 - [ ] ⭐ Include an AI-controlled character controlled with a different AI
 - [X] ⭐ Add a pause menu that includes, at minimum, the ability to resume or return to the main menu
 - [ ] ⭐ The game is released publicly on <code>itch.io</code>, with all the recommended accompanying text, screenshots, gameplay videos, <i>etc.</i>
+
+
+# Third Party Assets
+Dinosaur Sprites  
+Author: [ScissorMarks](https://twitter.com/ScissorMarks)  
+License: [Creative Commons Attribution v4.0 International](http://creativecommons.org/licenses/by/3.0/)     
+Source: https://arks.itch.io/dino-characters  
