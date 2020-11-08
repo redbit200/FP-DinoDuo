@@ -56,5 +56,17 @@ You are controlling both characters at the same time, be creative to figure out 
 # Third Party Assets
 Dinosaur Sprites  
 Author: [ScissorMarks](https://twitter.com/ScissorMarks)  
-License: [Creative Commons Attribution v4.0 International](http://creativecommons.org/licenses/by/3.0/)     
+License: [Creative Commons Attribution v4.0 International](http://creativecommons.org/licenses/by/4.0/)     
+Source: https://arks.itch.io/dino-characters  
+
+Map Assets
+`Sci-fi Platformer Tiles (32x32)`  
+Author: [bart](https://opengameart.org/users/bart)  
+License: [Creative Commons 1.0 Universal - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)     
+Source: https://arks.itch.io/dino-characters  
+
+Font
+`Dinocraft`  
+Author: [selawetype](https://www.dafont.com/sukro-typeface.d6998)  
+License: [Creative Commons v4.0 International](http://creativecommons.org/licenses/by/4.0/)     
 Source: https://arks.itch.io/dino-characters  
