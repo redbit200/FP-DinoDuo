@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/tilemap.png" type="Texture" id=1]
 [ext_resource path="res://src/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/HUD.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Pipe.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Level.gd" type="Script" id=5]
+[ext_resource path="res://src/Title.tscn" type="PackedScene" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -188,6 +190,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 6/z_index = 0
 
 [node name="Level" type="Node2D"]
+script = ExtResource( 5 )
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2( 32, 32 )
@@ -212,7 +215,13 @@ format = 1
 tile_data = PoolIntArray( 196609, 1, 0, 196626, 1, 0, 262145, 5, 0, 262162, 5, 0, 327681, 5, 0, 327698, 5, 0, 393217, 5, 0, 393234, 5, 0, 458753, 6, 0, 458770, 6, 0 )
 
 [node name="Pipe" parent="." instance=ExtResource( 4 )]
-position = Vector2( 48, 168 )
+position = Vector2( 48, 176 )
 
 [node name="Pipe2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 592, 168 )
+position = Vector2( 592, 176 )
+
+[node name="LevelTime" type="Timer" parent="."]
+wait_time = 180.0
+one_shot = true
+
+[node name="Title" parent="." instance=ExtResource( 6 )]

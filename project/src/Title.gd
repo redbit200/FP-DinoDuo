@@ -1,6 +1,4 @@
 extends Node2D
 
-
-func _input(event):
-	if event is InputEventKey:
-		get_tree().change_scene("res://src/Level.tscn")
+func _on_StartButton_pressed():
+	get_parent().start_game()
