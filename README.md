@@ -53,6 +53,8 @@ For our group iteration 1 went well. We had no trouble following the plan for th
 - [X] ⭐ Add a pause menu that includes, at minimum, the ability to resume or return to the main menu
 - [ ] ⭐ The game is released publicly on <code>itch.io</code>, with all the recommended accompanying text, screenshots, gameplay videos, <i>etc.</i>
 
+We believe that this submission deserves an A based on the checklist above.
+
 
 # Third Party Assets
 Dinosaur Sprites  
