@@ -13,3 +13,4 @@ func _on_ContinueButton_pressed():
 
 func _on_BackToTitleButton_pressed():
 	get_tree().reload_current_scene()
+	get_tree().paused = false
