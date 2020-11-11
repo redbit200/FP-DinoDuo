@@ -58,8 +58,8 @@ We believe that this submission deserves an A based on the checklist above.
 
 # Third Party Assets
 Dinosaur Sprites  
-Author: [ScissorMarks](https://twitter.com/ScissorMarks)  
-License: [Creative Commons Attribution v4.0 International](http://creativecommons.org/licenses/by/4.0/)     
+Artist: [ScissorMarks](https://twitter.com/ScissorMarks)  
+Free for personal use  
 Source: https://arks.itch.io/dino-characters  
 
 Map Assets  
@@ -71,5 +71,5 @@ Source: https://opengameart.org/content/sci-fi-platformer-tiles-32x32
 Font  
 `Dinocraft`  
 Author: [selawetype](https://www.dafont.com/sukro-typeface.d6998)  
-License: [Creative Commons v4.0 International](http://creativecommons.org/licenses/by/4.0/)     
+Free for personal use   
 Source: https://www.dafont.com/dinocraft.font
