@@ -1,7 +1,10 @@
 extends Node2D
 
 
+
 func _ready():
+	Global.nextLevel = "res://src/levels/Level" + String(Global.levelNumber+1) + ".tscn"
+	Global.levelNumber += 1
 	$LevelTime.start()
 
 

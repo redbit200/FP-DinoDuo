@@ -25,3 +25,8 @@ func _on_BackToTitleButton2_pressed():
 	var _ignored = get_tree().reload_current_scene()
 	_ignored = get_tree().change_scene("res://src/Title.tscn")
 	get_tree().paused = false
+
+
+func _on_NextLevel_pressed():
+	var _ignored = get_tree().change_scene(Global.nextLevel)
+	get_tree().paused = false

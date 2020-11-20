@@ -125,6 +125,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="NextLevel" type="Button" parent="GameResult/WinText"]
+margin_left = 96.0
+margin_top = 192.0
+margin_right = 176.0
+margin_bottom = 212.0
+text = "Next Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="LoseText" type="RichTextLabel" parent="GameResult"]
 visible = false
 material = SubResource( 7 )
@@ -149,6 +159,9 @@ margin_top = 384.0
 margin_right = 610.0
 margin_bottom = 404.0
 text = "Back to Title Screen"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="HintLabel" type="Label" parent="."]
 visible = false
@@ -163,4 +176,5 @@ __meta__ = {
 }
 [connection signal="pressed" from="PausePopup/ContinueButton" to="." method="_on_ContinueButton_pressed"]
 [connection signal="pressed" from="PausePopup/BackToTitleButton" to="." method="_on_BackToTitleButton_pressed"]
+[connection signal="pressed" from="GameResult/WinText/NextLevel" to="." method="_on_NextLevel_pressed"]
 [connection signal="pressed" from="GameResult/BackToTitleButton2" to="." method="_on_BackToTitleButton2_pressed"]
