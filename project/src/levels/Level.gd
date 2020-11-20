@@ -1,10 +1,16 @@
 extends Node2D
 
-
+var locked := false
+var key1 := false
+var key2 := false
 
 func _ready():
 	Global.nextLevel = "res://src/levels/Level" + String(Global.levelNumber+1) + ".tscn"
 	Global.levelNumber += 1
+	if get_children().has(key1):
+		locked = true
+		
+	print(locked)
 	$LevelTime.start()
 
 
