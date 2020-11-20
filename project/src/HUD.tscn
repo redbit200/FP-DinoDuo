@@ -29,7 +29,7 @@ light_mode = 1
 
 [sub_resource type="DynamicFont" id=8]
 size = 30
-outline_size = 2
+outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
@@ -171,6 +171,18 @@ margin_right = 693.0
 margin_bottom = 82.0
 custom_fonts/font = SubResource( 8 )
 text = "You need both dinosaurs to be in their goals to win!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HintKey" type="Label" parent="."]
+visible = false
+margin_left = 8.0
+margin_top = 56.0
+margin_right = 693.0
+margin_bottom = 106.0
+custom_fonts/font = SubResource( 8 )
+text = "The goal is locked you need both [players to grab their key"
 __meta__ = {
 "_edit_use_anchors_": false
 }
