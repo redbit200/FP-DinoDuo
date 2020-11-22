@@ -10,9 +10,7 @@ func _ready():
 	for child in get_children():
 		if child.name == "Key":
 			locked = true
-		else:
-			pass
-	print(locked)
+		
 	$LevelTime.start()
 
 
