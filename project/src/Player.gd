@@ -24,6 +24,7 @@ func get_input():
 	var climb_down = Input.is_action_pressed("ui_down")
 
 	if jump and is_on_floor():
+		$JumpSound.play()
 		if !right and !left:
 			jumping = true
 			animated_sprite.play("jump")
