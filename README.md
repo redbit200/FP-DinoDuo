@@ -74,7 +74,7 @@ Author: [selawetype](https://www.dafont.com/sukro-typeface.d6998)
 Free for personal use   
 Source: https://www.dafont.com/dinocraft.font
 
-Jump Sound
+Jump Sound  
 no copyright reserved  
 [Creative Commons 1.0 Universal - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)     
 Author: [BehanSean](https://freesound.org/people/BehanSean/)  
