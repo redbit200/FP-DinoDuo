@@ -65,7 +65,7 @@ Source: https://arks.itch.io/dino-characters
 Map Assets  
 `Sci-fi Platformer Tiles (32x32)`  
 Author: [bart](https://opengameart.org/users/bart)  
-License: [Creative Commons 1.0 Universal - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)     
+[Creative Commons 1.0 Universal - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)     
 Source: https://opengameart.org/content/sci-fi-platformer-tiles-32x32  
 
 Font  
@@ -73,3 +73,9 @@ Font
 Author: [selawetype](https://www.dafont.com/sukro-typeface.d6998)  
 Free for personal use   
 Source: https://www.dafont.com/dinocraft.font
+
+Jump Sound
+no copyright reserved
+[Creative Commons 1.0 Universal - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)     
+Author: [BehanSean](https://freesound.org/people/BehanSean/)  
+Source: https://freesound.org/people/BehanSean/sounds/422426/  
