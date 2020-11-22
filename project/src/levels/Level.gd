@@ -7,10 +7,11 @@ var key2 := false
 func _ready():
 	Global.nextLevel = "res://src/levels/Level" + String(Global.levelNumber+1) + ".tscn"
 	Global.levelNumber += 1
-	if get_node("Key") or get_node("Key2"):
-		locked = true
-		print(locked)
-		
+	for child in get_children():
+		if child.name == "Key":
+			locked = true
+		else:
+			pass
 	print(locked)
 	$LevelTime.start()
 
