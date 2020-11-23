@@ -18,7 +18,7 @@ Make sure both of the dinosaurs reach the end of the level! The goal is marked w
 You are controlling both characters at the same time, be creative to figure out a way to reach both goals!
 
 ## Reflection
-Our group did not run into many issues this iteration, we mostly polished up the work from the previous iteration and also adding a few items to the game. The first item we added was spikes that would kill the player causing the game to end. We were able to use similar code from our pipe scene which allowed us to move onto creating more levels for the game. The second thing we added was keys which add more complexity to the game. This descision was made by the group to ensure that the player had to think more about their movements and gives the player more objectives. Overall, we learned a lot more about collision detection in the godot engine which should help us out in the next and final iteration of this project.
+Our group did not run into many issues this iteration, we mostly polished up the work from the previous iteration and added a few items to the game. The first item we added was spikes that would kill the player causing the game to end. We were able to use similar code from our pipe scene which allowed us to move onto creating more levels for the game. The second thing we added was keys which add more complexity to the game. This decision was made by the group to ensure that the player had to think more about their movements and gives the player more objectives. Overall, we learned a lot more about collision detection in the godot engine which should help us out in the next and final iteration of this project.
 
 ## Evaluation
 - [X] D-1: The repository link is submitted to Canvas before the project deadline.
