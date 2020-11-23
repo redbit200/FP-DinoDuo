@@ -5,8 +5,10 @@ var key1 := false
 var key2 := false
 
 func _ready():
-	Global.nextLevel = "res://src/levels/Level" + String(Global.levelNumber+1) + ".tscn"
-	Global.levelNumber += 1
+	if Global.levelNumber <= 2:
+		Global.nextLevel = "res://src/levels/Level" + String(Global.levelNumber+1) + ".tscn"
+		Global.levelNumber += 1
+		
 	for child in get_children():
 		if child.name == "Key":
 			locked = true
