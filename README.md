@@ -10,7 +10,7 @@ Space bar - Jump
 Left arrow key - Move Left  
 Right arrow key - Move Right  
 Up arrow key - Move up through a pipe  
-Down arrow key - Move down through a pipe
+Down arrow key - Move down through a pipe  
 ESC Key - Pause menu
 
 #### Objective:  
