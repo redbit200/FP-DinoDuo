@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://src/Title.gd" type="Script" id=1]
 [ext_resource path="res://assets/dinocraft.ttf" type="DynamicFontData" id=2]
@@ -214,12 +214,23 @@ outline_size = 5
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
+[sub_resource type="Theme" id=23]
+
+[sub_resource type="DynamicFont" id=24]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 50
+font_data = ExtResource( 2 )
+
 [node name="Title" type="Node2D"]
 script = ExtResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
+margin_top = 1.18921
 margin_right = 1090.0
-margin_bottom = 642.0
+margin_bottom = 643.189
 color = Color( 0.482353, 0.482353, 0.482353, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -274,3 +285,69 @@ text = "Dino Duo"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="LevelSelectButton" type="Button" parent="."]
+margin_left = 22.6696
+margin_top = 576.005
+margin_right = 239.67
+margin_bottom = 632.005
+theme = SubResource( 23 )
+custom_fonts/font = SubResource( 24 )
+shortcut_in_tooltip = false
+text = "Level Selector"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelSelector" type="Node2D" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="LevelSelector"]
+margin_left = 364.335
+margin_top = 254.335
+margin_right = 735.335
+margin_bottom = 512.335
+color = Color( 0.101961, 0.631373, 0.184314, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level1Button" type="Button" parent="LevelSelector"]
+margin_left = 457.986
+margin_top = 286.018
+margin_right = 626.986
+margin_bottom = 342.018
+rect_pivot_offset = Vector2( 142.543, 56 )
+custom_fonts/font = SubResource( 25 )
+text = "Level One"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2Button" type="Button" parent="LevelSelector"]
+margin_left = 457.986
+margin_top = 363.439
+margin_right = 626.986
+margin_bottom = 419.439
+rect_pivot_offset = Vector2( 142.543, 56 )
+custom_fonts/font = SubResource( 25 )
+text = "Level Two"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3Button" type="Button" parent="LevelSelector"]
+margin_left = 456.652
+margin_top = 440.859
+margin_right = 625.652
+margin_bottom = 496.859
+rect_pivot_offset = Vector2( 142.543, 56 )
+custom_fonts/font = SubResource( 25 )
+text = "Level Three"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="LevelSelectButton" to="." method="_on_LevelSelectButton_pressed"]
+[connection signal="pressed" from="LevelSelector/Level1Button" to="." method="_on_Level1Button_pressed"]
+[connection signal="pressed" from="LevelSelector/Level2Button" to="." method="_on_Level2Button_pressed"]
+[connection signal="pressed" from="LevelSelector/Level3Button" to="." method="_on_Level3Button_pressed"]

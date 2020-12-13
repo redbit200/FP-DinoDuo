@@ -1,8 +1,6 @@
 extends Node2D
 
-
 var level_time : int = 0
-
 
 func _process(_delta):
 	if Input.is_action_just_pressed('pause'):
