@@ -44,7 +44,10 @@ func _on_LevelTime_timeout():
 
 func win_level():
 	get_node("HUD/GameResult").show()
-	get_node("HUD/GameResult/WinText").show()
+	if Global.levelNumber == 3:
+		get_node("HUD/GameResult/GameOverText").show()
+	else:
+		get_node("HUD/GameResult/WinText").show()
 	get_tree().paused = true
 
 
