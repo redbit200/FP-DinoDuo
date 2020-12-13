@@ -5,7 +5,7 @@ var key1 := false
 var key2 := false
 
 func _ready():
-	if Global.levelNumber <= 2:
+	if Global.levelNumber <= 3:
 		Global.nextLevel = "res://src/levels/Level" + String(Global.levelNumber+1) + ".tscn"
 		Global.levelNumber += 1
 		
@@ -44,7 +44,7 @@ func _on_LevelTime_timeout():
 
 func win_level():
 	get_node("HUD/GameResult").show()
-	if Global.levelNumber == 3:
+	if Global.levelNumber == 4:
 		get_node("HUD/GameResult/GameOverText").show()
 	else:
 		get_node("HUD/GameResult/WinText").show()
