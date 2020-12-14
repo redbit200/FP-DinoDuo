@@ -17,23 +17,23 @@ func _ready():
 
 
 func _process(_delta):
-	get_node("HUD/LevelTimeLabel").text = str(int($LevelTime.time_left)) + " Seconds Remaining"
+	get_node("Camera/HUD/LevelTimeLabel").text = str(int($LevelTime.time_left)) + " Seconds Remaining"
 	check_goal()
 	
 	
 func check_goal():
 	if ($Player.at_goal or $Player2.at_goal) and (!$Player.at_goal or !$Player2.at_goal):
-		$HUD/HintLabel.show()
+		$Camera/HUD/HintLabel.show()
 	elif $Player.at_goal == true and $Player2.at_goal == true:
-		$HUD/HintLabel.hide()
+		$Camera/HUD/HintLabel.hide()
 		if locked == true and (!key1 or !key2):
-			$HUD/HintKey.show()
+			$Camera/HUD/HintKey.show()
 		else:
-			$HUD/HintKey.hide()
+			$Camera/HUD/HintKey.hide()
 			win_level()
 	else:
-		$HUD/HintLabel.hide()
-		$HUD/HintKey.hide()
+		$Camera/HUD/HintLabel.hide()
+		$Camera/HUD/HintKey.hide()
 		
 		
 		
@@ -43,15 +43,20 @@ func _on_LevelTime_timeout():
 
 
 func win_level():
+<<<<<<< HEAD
+	get_node("Camera/HUD/GameResult").show()
+	get_node("Camera/HUD/GameResult/WinText").show()
+=======
 	get_node("HUD/GameResult").show()
 	if Global.levelNumber == 4:
 		get_node("HUD/GameResult/GameOverText").show()
 	else:
 		get_node("HUD/GameResult/WinText").show()
+>>>>>>> f7bbd7ac6be3fd4dfbb78407dd2de6aac4c16427
 	get_tree().paused = true
 
 
 func lose_level():
-	get_node("HUD/GameResult").show()
-	get_node("HUD/GameResult/LoseText").show()
+	get_node("Camera/HUD/GameResult").show()
+	get_node("Camera/HUD/GameResult/LoseText").show()
 	get_tree().paused = true
