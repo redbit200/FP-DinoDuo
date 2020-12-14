@@ -18,7 +18,7 @@ Make sure both of the dinosaurs reach the end of the level! The goal is marked w
 You are controlling both characters at the same time, be creative to figure out a way to reach both goals!
 
 ## Reflection
-Our group did not run into many issues this iteration, we mostly polished up the work from the previous iteration and added a few items to the game. The first item we added was spikes that would kill the player causing the game to end. We were able to use similar code from our pipe scene which allowed us to move onto creating more levels for the game. The second thing we added was keys which add more complexity to the game. This decision was made by the group to ensure that the player had to think more about their movements and gives the player more objectives. Overall, we learned a lot more about collision detection in the godot engine which should help us out in the next and final iteration of this project.
+For this iteration, our focus was on adding a dynamic camera to the game. This was a challenge to incorporate as we needed the camera to always have both characters on screen at the same time. To have both a camera that moves with the player and show both characters the camera had to be able to zoom in and out depending on how close or far the characters were from each other. We had to look at the Godot documentation on Camera2D to get a better idea how the node worked and how to go about solving the issue. Other then add the camera we added a feature to be able to select any level in the game from the title screen, which was not hard to get working.
 
 ## Evaluation
 - [X] D-1: The repository link is submitted to Canvas before the project deadline.
@@ -38,7 +38,7 @@ Our group did not run into many issues this iteration, we mostly polished up the
 - [X] A-1: The source code contains no warnings: all warnings are properly addressed, not just ignored.
 - [X] A-2: The game includes the conventional player experience loop of title, gameplay, and ending.
 - [X] A-3: Earn <em>N</em>*&lceil;<em>P</em>/2&rceil; stars, where <em>N</em> is the iteration number and <em>P</em> is the number of people on the team.
-- [ ] ⭐ Include a dynamic (non-static) camera
+- [X] ⭐ Include a dynamic (non-static) camera
 - [ ] ⭐ Incorporate parallax background scrolling
 - [ ] ⭐ Use paper doll animations
 - [ ] ⭐ Incorporate smooth transitions between title, game, and end states, rather than jumping between states via <code>change_scene</code>
