@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://src/Title.gd" type="Script" id=1]
 [ext_resource path="res://assets/dinocraft.ttf" type="DynamicFontData" id=2]
@@ -214,6 +214,14 @@ outline_size = 5
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
+[sub_resource type="DynamicFont" id=23]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 50
+font_data = ExtResource( 2 )
+
 [node name="Title" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -274,3 +282,64 @@ text = "Dino Duo"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="LevelSelectButton" type="Button" parent="."]
+margin_left = 38.6832
+margin_top = 571.344
+margin_right = 226.683
+margin_bottom = 624.344
+custom_fonts/font = SubResource( 23 )
+text = "Select Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelSelector" type="Node2D" parent="."]
+visible = false
+
+[node name="LevelSelectorBg" type="ColorRect" parent="LevelSelector"]
+margin_left = 363.0
+margin_top = 268.335
+margin_right = 719.0
+margin_bottom = 526.335
+color = Color( 0.054902, 0.486275, 0.0941176, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level1Button" type="Button" parent="LevelSelector"]
+margin_left = 460.665
+margin_top = 292.0
+margin_right = 632.665
+margin_bottom = 348.0
+custom_fonts/font = SubResource( 24 )
+text = "Level One"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level2Button" type="Button" parent="LevelSelector"]
+margin_left = 461.652
+margin_top = 367.67
+margin_right = 629.652
+margin_bottom = 423.67
+custom_fonts/font = SubResource( 24 )
+text = "Level Two"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level3Button" type="Button" parent="LevelSelector"]
+margin_left = 464.634
+margin_top = 445.516
+margin_right = 626.634
+margin_bottom = 501.516
+custom_fonts/font = SubResource( 24 )
+text = "Level Three"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="LevelSelectButton" to="." method="_on_LevelSelectButton_pressed"]
+[connection signal="pressed" from="LevelSelector/Level1Button" to="." method="_on_Level1Button_pressed"]
+[connection signal="pressed" from="LevelSelector/Level2Button" to="." method="_on_Level2Button_pressed"]
+[connection signal="pressed" from="LevelSelector/Level3Button" to="." method="_on_Level3Button_pressed"]
